@@ -1,0 +1,11 @@
+{
+    "test": {
+      "MONGODB_URI": "mongodb://localhost:27017/TodoAppTest",
+      "JWT_SECRET": "poijasdf98435jpgfdpoij3"
+    },
+    "development": {
+      
+      "MONGODB_URI": "mongodb+srv://aman208:atlas208@cluster0-ss781.mongodb.net/TodoApp?retryWrites=true&w=majority",
+      "JWT_SECRET": "pojiaj234oi234oij234oij4"
+    }
+  }

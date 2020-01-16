@@ -2,6 +2,7 @@ const express = require('express');
 var app = express();
 const port = process.env.PORT || 3000;
 
+require('./config/config');
 
   
 const bodyParser = require('body-parser');
@@ -16,7 +17,7 @@ app.use(cors());
 var mongoose = require('mongoose');
 try{
 mongoose.Promise = global.Promise;
-var MONGODB_URI = 'mongodb+srv://aman208:atlas208@cluster0-ss781.mongodb.net/TodoApp?retryWrites=true&w=majority';
+var MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose.connect( MONGODB_URI, {useNewUrlParser : true ,useUnifiedTopology: true ,
   useCreateIndex: true,
